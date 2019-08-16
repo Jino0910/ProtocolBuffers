@@ -8,6 +8,7 @@ target 'ProtocolBuffers' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Alamofire'
+  pod 'SwiftProtobuf'
 
   # Pods for ProtocolBuffers
 

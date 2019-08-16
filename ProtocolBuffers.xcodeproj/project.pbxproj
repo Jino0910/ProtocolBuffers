@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,19 @@
 		32964F6B9CC7125C30C6EC4E /* Pods_ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078CD8AB5EFB64134AF3A742 /* Pods_ProtocolBuffers.framework */; };
 		615838F12306D7F00038D338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615838F02306D7F00038D338 /* AppDelegate.swift */; };
 		615838F32306D7F00038D338 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615838F22306D7F00038D338 /* ViewController.swift */; };
-		615838F62306D7F00038D338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615838F42306D7F00038D338 /* Main.storyboard */; };
 		615838F92306D7F00038D338 /* ProtocolBuffers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 615838F72306D7F00038D338 /* ProtocolBuffers.xcdatamodeld */; };
 		615838FB2306D7F10038D338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 615838FA2306D7F10038D338 /* Assets.xcassets */; };
 		615838FE2306D7F10038D338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615838FC2306D7F10038D338 /* LaunchScreen.storyboard */; };
 		615839092306D7F10038D338 /* ProtocolBuffersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615839082306D7F10038D338 /* ProtocolBuffersTests.swift */; };
+		6158391A2306DDB60038D338 /* SpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615839142306DDB60038D338 /* SpeakerCell.swift */; };
+		6158391B2306DDB60038D338 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615839152306DDB60038D338 /* CardViewController.swift */; };
+		6158391C2306DDB60038D338 /* SpeakersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615839162306DDB60038D338 /* SpeakersListViewController.swift */; };
+		6158391D2306DDB60038D338 /* SpeakersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615839172306DDB60038D338 /* SpeakersViewModel.swift */; };
+		6158391E2306DDB60038D338 /* NSAttributedString+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615839182306DDB60038D338 /* NSAttributedString+helper.swift */; };
+		6158391F2306DDB60038D338 /* RWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615839192306DDB60038D338 /* RWService.swift */; };
+		615839212306DE060038D338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615839202306DE050038D338 /* Main.storyboard */; };
+		6158392A2306EFF00038D338 /* contact.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615839292306EFF00038D338 /* contact.pb.swift */; };
+		6158392C2306EFF40038D338 /* contact+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158392B2306EFF40038D338 /* contact+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +43,6 @@
 		615838ED2306D7F00038D338 /* ProtocolBuffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolBuffers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		615838F02306D7F00038D338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		615838F22306D7F00038D338 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		615838F52306D7F00038D338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		615838F82306D7F00038D338 /* ProtocolBuffers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProtocolBuffers.xcdatamodel; sourceTree = "<group>"; };
 		615838FA2306D7F10038D338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		615838FD2306D7F10038D338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +50,15 @@
 		615839042306D7F10038D338 /* ProtocolBuffersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolBuffersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		615839082306D7F10038D338 /* ProtocolBuffersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolBuffersTests.swift; sourceTree = "<group>"; };
 		6158390A2306D7F10038D338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		615839142306DDB60038D338 /* SpeakerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerCell.swift; sourceTree = "<group>"; };
+		615839152306DDB60038D338 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		615839162306DDB60038D338 /* SpeakersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersListViewController.swift; sourceTree = "<group>"; };
+		615839172306DDB60038D338 /* SpeakersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersViewModel.swift; sourceTree = "<group>"; };
+		615839182306DDB60038D338 /* NSAttributedString+helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+helper.swift"; sourceTree = "<group>"; };
+		615839192306DDB60038D338 /* RWService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWService.swift; sourceTree = "<group>"; };
+		615839202306DE050038D338 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		615839292306EFF00038D338 /* contact.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contact.pb.swift; sourceTree = "<group>"; };
+		6158392B2306EFF40038D338 /* contact+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "contact+extension.swift"; sourceTree = "<group>"; };
 		78636A55B7675698EE5F7672 /* Pods-ProtocolBuffersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolBuffersTests.release.xcconfig"; path = "Target Support Files/Pods-ProtocolBuffersTests/Pods-ProtocolBuffersTests.release.xcconfig"; sourceTree = "<group>"; };
 		D62A6B7AEC6D568297731BA9 /* Pods-ProtocolBuffersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolBuffersTests.debug.xcconfig"; path = "Target Support Files/Pods-ProtocolBuffersTests/Pods-ProtocolBuffersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8A39263F5B401933C6853C9 /* Pods_ProtocolBuffersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtocolBuffersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +92,6 @@
 				D62A6B7AEC6D568297731BA9 /* Pods-ProtocolBuffersTests.debug.xcconfig */,
 				78636A55B7675698EE5F7672 /* Pods-ProtocolBuffersTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,7 +120,9 @@
 			children = (
 				615838F02306D7F00038D338 /* AppDelegate.swift */,
 				615838F22306D7F00038D338 /* ViewController.swift */,
-				615838F42306D7F00038D338 /* Main.storyboard */,
+				615839222306E9670038D338 /* ProtoBufObject */,
+				615839132306DD910038D338 /* RWCards */,
+				615839202306DE050038D338 /* Main.storyboard */,
 				615838FA2306D7F10038D338 /* Assets.xcassets */,
 				615838FC2306D7F10038D338 /* LaunchScreen.storyboard */,
 				615838FF2306D7F10038D338 /* Info.plist */,
@@ -121,6 +138,28 @@
 				6158390A2306D7F10038D338 /* Info.plist */,
 			);
 			path = ProtocolBuffersTests;
+			sourceTree = "<group>";
+		};
+		615839132306DD910038D338 /* RWCards */ = {
+			isa = PBXGroup;
+			children = (
+				615839192306DDB60038D338 /* RWService.swift */,
+				615839162306DDB60038D338 /* SpeakersListViewController.swift */,
+				615839172306DDB60038D338 /* SpeakersViewModel.swift */,
+				615839152306DDB60038D338 /* CardViewController.swift */,
+				615839182306DDB60038D338 /* NSAttributedString+helper.swift */,
+				615839142306DDB60038D338 /* SpeakerCell.swift */,
+			);
+			path = RWCards;
+			sourceTree = "<group>";
+		};
+		615839222306E9670038D338 /* ProtoBufObject */ = {
+			isa = PBXGroup;
+			children = (
+				615839292306EFF00038D338 /* contact.pb.swift */,
+				6158392B2306EFF40038D338 /* contact+extension.swift */,
+			);
+			path = ProtoBufObject;
 			sourceTree = "<group>";
 		};
 		C75064A6B6474306DCAC1389 /* Frameworks */ = {
@@ -216,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615839212306DE060038D338 /* Main.storyboard in Resources */,
 				615838FE2306D7F10038D338 /* LaunchScreen.storyboard in Resources */,
 				615838FB2306D7F10038D338 /* Assets.xcassets in Resources */,
-				615838F62306D7F00038D338 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +340,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				615838F92306D7F00038D338 /* ProtocolBuffers.xcdatamodeld in Sources */,
+				6158392C2306EFF40038D338 /* contact+extension.swift in Sources */,
 				615838F32306D7F00038D338 /* ViewController.swift in Sources */,
+				6158391D2306DDB60038D338 /* SpeakersViewModel.swift in Sources */,
 				615838F12306D7F00038D338 /* AppDelegate.swift in Sources */,
+				6158391B2306DDB60038D338 /* CardViewController.swift in Sources */,
+				6158392A2306EFF00038D338 /* contact.pb.swift in Sources */,
+				6158391E2306DDB60038D338 /* NSAttributedString+helper.swift in Sources */,
+				6158391F2306DDB60038D338 /* RWService.swift in Sources */,
+				6158391C2306DDB60038D338 /* SpeakersListViewController.swift in Sources */,
+				6158391A2306DDB60038D338 /* SpeakerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,14 +372,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		615838F42306D7F00038D338 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				615838F52306D7F00038D338 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		615838FC2306D7F10038D338 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
